@@ -17,7 +17,7 @@ A Python-based CLI tool that transcribes German-language `.m4a` interview record
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/interview-transcription-diarisation-pipeline.git
+git clone https://github.com/yourusername/interview-transcription-diarisation.git
 cd interview-transcription-diarisation-pipeline
 ```
 
