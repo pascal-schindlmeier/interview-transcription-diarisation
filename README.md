@@ -1,6 +1,6 @@
 # Interview Transcription & Diarisation Pipeline
 
-A Python-based CLI tool that transcribes German-language `.m4a` interview recordings into readable, speaker-annotated text using **WhisperX** and **pyannote.audio**. It includes optional word alignment, speaker diarisation, and outputs in both `.txt` and `.json` formats.
+A Python-based CLI tool that transcribes German-language `.m4a` interview recordings into readable, speaker-annotated text using **WhisperX** and **pyannote.audio**. It includes word alignment, speaker diarisation.
 
 ## Features
 
@@ -9,22 +9,21 @@ A Python-based CLI tool that transcribes German-language `.m4a` interview record
 - Speaker diarisation with pretrained pyannote pipeline
 - Outputs:
   - Human-readable `.txt` transcript
-  - JSON transcript with segment data
-  - Speaker logs
+  - Log file
+  - .wav audio file
 
 ## Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/interview-transcription-diarisation.git
-cd interview-transcription-diarisation-pipeline
+git clone https://github.com/pascal-schindlmeier/interview-transcription-diarisation.git
 ```
 
 ### 2. Create and Activate a Virtual Environme
 
 ```bash
-python -m venv .venv
+python -m venv nameOfYourVenv
 .venv\Scripts\activate
 ```
 
@@ -34,12 +33,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### 4. Set Up Environment Variables
-
-```bash
-cp .env.example .env
-```
-Open .env and paste your Hugging Face API token:
+Create a .env file in the same directory and paste your Hugging Face API token:
 HF_AUTH_TOKEN=your_token_here
 
 You can get a token from: https://huggingface.co/settings/tokens
